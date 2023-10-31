@@ -39,7 +39,7 @@ do{
             const monto = parseFloat(prompt('Ingrese el monto que desea extraer'));
             if(!isNaN(monto) && monto > 0 && monto <= saldo){
                 saldo = saldo - monto; //saldo -= monto
-                alert(`Retiro ${monto}, su saldo actual es ${saldo}`);
+                alert(`Retiro $${monto}, su saldo actual es $${saldo}`);
             }else{
              alert(`Ingreso un monto invalido`);
             }
