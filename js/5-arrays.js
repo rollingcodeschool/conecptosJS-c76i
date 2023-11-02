@@ -21,3 +21,32 @@ for(let i = 0; i < peliculas.length; i++){
     document.write(`<li>${peliculas[i]}</li>`)
 }
 document.write(`</ul>`)
+
+//agregar elementos
+peliculas.unshift('El grinch','mi pobre angelito');
+
+document.write(`<h2>Lista de peliculas + 2 elementos (${peliculas.length})</h2>`)
+document.write(`<ul>`);
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+peliculas.splice(5,0, 'martes 13 🔪');
+document.write(`<h2>Lista de peliculas + 1 elementos (${peliculas.length})</h2>`)
+document.write(`<ul>`);
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+peliculas.push('gladiador');
+document.write(`<h2>Lista de peliculas + 1 elementos (${peliculas.length})</h2>`)
+document.write(`<ul>`)
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+
+
