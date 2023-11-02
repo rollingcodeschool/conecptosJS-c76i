@@ -12,6 +12,21 @@ function saludoCompleto(nombreIngresado, apellidoIngresado){
     document.write(`<p>Hola ${nombreIngresado}, ${apellidoIngresado} que tengas un buen día.</p>`);
 }
 
+//funciones que retornan un valor
+// function multiplicar(numero1, numero2){
+//     const resultado = numero1 * numero2;
+//     console.log(resultado);
+//     return resultado;
+// }
+
+const multiplicar = (numero1, numero2) =>{
+    const resultado = numero1 * numero2;
+    console.log(resultado);
+    return resultado;
+}
+
+
+
 //llamar o invocar a un funcion
 saludar();
 
@@ -22,6 +37,12 @@ const apellido = prompt('Ingrese su apellido');
 
 saludoCompleto(nombre, apellido);
 saludoCompleto();
+
+const respuesta = multiplicar(5,3);
+
+document.write(`<p>La respuesta de la funcion que multiplica es ${respuesta}</p>`);
+document.write(`<p>La respuesta de la funcion que multiplica es ${multiplicar(7,3)}</p>`);
+
 
 
 
