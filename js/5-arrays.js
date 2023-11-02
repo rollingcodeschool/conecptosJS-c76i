@@ -88,3 +88,4 @@ for(let i = 0; i < peliculas.length; i++){
 document.write(`</ul>`);
 
 
+
