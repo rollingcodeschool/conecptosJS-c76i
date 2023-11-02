@@ -48,5 +48,43 @@ for(let i = 0; i < peliculas.length; i++){
 }
 document.write(`</ul>`);
 
+//modificar los elementos del array
+peliculas[7] = 'El padrino 1';
+
+document.write(`<h2>Lista de peliculas, modificamos un elemento (${peliculas.length})</h2>`)
+document.write(`<ul>`)
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+//borrar elementos del array
+peliculas.shift();
+document.write(`<h2>Lista de peliculas - un elemento (${peliculas.length})</h2>`)
+document.write(`<ul>`)
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+peliculas.splice(7,1);
+// peliculas.splice(2,3);
+// peliculas.splice(2); //borro todos los elementos desde la posicion 2
+
+document.write(`<h2>Lista de peliculas - un elemento (${peliculas.length})</h2>`)
+document.write(`<ul>`)
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
+
+peliculas.pop();
+
+document.write(`<h2>Lista de peliculas - un elemento (${peliculas.length})</h2>`)
+document.write(`<ul>`)
+for(let i = 0; i < peliculas.length; i++){
+    document.write(`<li>${peliculas[i]}</li>`)
+}
+document.write(`</ul>`);
 
 
