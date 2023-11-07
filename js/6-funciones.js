@@ -13,6 +13,7 @@ function saludoCompleto(nombreIngresado, apellidoIngresado){
 }
 
 //funciones que retornan un valor
+
 // function multiplicar(numero1, numero2){
 //     const resultado = numero1 * numero2;
 //     console.log(resultado);
