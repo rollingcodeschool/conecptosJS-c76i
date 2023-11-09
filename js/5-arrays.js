@@ -78,9 +78,21 @@ mostrarPelisNuevas(peliculasIronman, 'Peliculas de Ironman');
 
 //para busquedas de un elemento del array, usar el metodo find
 const peliculaBuscada = peliculas.find((item)=> item === 'Harry Potter');
-const peliculaBuscada2 = peliculas.find((item)=> item === 'Batman');
+const peliculaBuscada2 = peliculas.find((item)=> item === 'Rocky');
 console.log(peliculaBuscada);
 document.write(`<p>Pelicula buscada: ${peliculaBuscada}</p>`)
 
-//podria modificar el resultado undefined con if-else, operador ternario
-document.write(`<p>Pelicula buscada (Batman): ${peliculaBuscada2}</p>`)
+//podria modificar el resultado undefined con if-else, operador ternario;
+/*
+if(peliculaBuscada2 !== undefined){
+    document.write(`<p>Pelicula buscada (Batman): ${peliculaBuscada2}</p>`)
+}else{
+    document.write(`<p>Pelicula buscada (Batman): No se encontro la peli buscada</p>`)
+}
+*/
+// (condicion logica)? el codigo si es verdadera la condicion : el codigo si la condicion logica fue false;
+
+// const respuestaTernario = (peliculaBuscada2 !== undefined)? peliculaBuscada2 : 'No se encontro la peli buscada';
+// document.write(`<p>Pelicula buscada (Batman): ${respuestaTernario}</p>`)
+
+document.write(`<p>Pelicula buscada (Batman): ${(peliculaBuscada2 !== undefined)? peliculaBuscada2 : 'No se encontro la peli buscada'}</p>`)
