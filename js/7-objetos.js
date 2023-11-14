@@ -8,12 +8,16 @@ const pelicula = {
     genero: ['comedia', 'fantasia'],
     //metodos
     iniciarPeli: function (){
-        document.write(`<p>...Comenzando la reproducción</p>`)
+        console.log(this);
+        document.write(`<p>...Comenzando la reproducción de ${this.titulo}</p>`)
     },
     pausa: () =>{
+        // console.log(this)
         document.write(`<p>Se pauso la pelicula</p>`)
     }
 }
+
+console.log(this);
 
 //mostrar un objeto
 console.log(pelicula);
@@ -36,3 +40,11 @@ console.log(pelicula);
 //agregamos un nuevo genero
 pelicula.genero.push('Aventura');
 console.log(pelicula.genero)
+
+//borrar la propiedad de un objeto
+delete pelicula.genero;
+console.log(pelicula);
+
+//invocar o llamar a un metodo del objeto
+pelicula.iniciarPeli();
+pelicula.pausa();
